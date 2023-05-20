@@ -8,14 +8,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: dobby
+      app: dobby-cluster
   template:
     metadata:
       labels:
-        app: dobby
+        app: dobby-cluster
     spec:
       containers:
-        - name: dobby-pod
+        - name: dobby-cluster
           image: thecasualcoder/dobby
           ports:
             - containerPort: 4444
